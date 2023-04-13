@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\AuthController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +14,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('welcome');
 });
+// Отображение формы авторизации
+Route::get('login', 'App\Http\Controllers\AuthController@showLoginForm')->name('login');
+
+// Обработка отправки формы авторизации
+Route::post('login', 'App\Http\Controllers\AuthController@login');
+
+// Выход из системы
+Route::post('logout', function () {
+    Auth::logout();
+    return redirect('/login');
+})->name('logout');
