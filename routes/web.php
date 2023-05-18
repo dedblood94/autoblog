@@ -13,10 +13,10 @@ use App\Http\Controllers\AuthController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/home', function () {
-    return view('welcome');
-});
+// Отображение главной
+Route::get('/', function () {
+    return view('home');
+})->name('home');
 // Отображение формы авторизации
 Route::get('login', 'App\Http\Controllers\AuthController@showLoginForm')->name('login');
 
@@ -28,3 +28,5 @@ Route::post('logout', function () {
     Auth::logout();
     return redirect('/login');
 })->name('logout');
+//Отображение поиска
+Route::get('search','App\Http\Controllers\Search@index')->name('search');
