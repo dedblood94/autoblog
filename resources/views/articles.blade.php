@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Домашняя страница - Автоблог</title>
-    <link rel="stylesheet" type="text/css" href="../css/app.css">
+    <title>Автоблог - Список статей</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 <header>
-    <h1>Добро пожаловать на Автоблог!</h1>
+    <h1>Автоблог</h1>
     <nav>
         <ul>
             <li><a href="{{ route('login') }}">Войти</a></li>
@@ -19,29 +19,29 @@
 </header>
 
 <main>
-    <section>
-        <h2>Последние статьи</h2>
+    <h2>Список статей</h2>
+
+    <div class="articles">
         <div class="article">
-            <h3>Заголовок статьи</h3>
+            <h3>Заголовок статьи 1</h3>
             <p>Описание статьи...</p>
             <a href="#">Читать далее</a>
         </div>
 
         <div class="article">
-            <h3>Заголовок статьи</h3>
+            <h3>Заголовок статьи 2</h3>
             <p>Описание статьи...</p>
             <a href="#">Читать далее</a>
         </div>
-    </section>
+    </div>
 
-    <aside>
-        <h2>Популярные статьи</h2>
-        <ul>
-            <li><a href="#">Название статьи 1</a></li>
-            <li><a href="#">Название статьи 2</a></li>
-            <li><a href="#">Название статьи 3</a></li>
-        </ul>
-    </aside>
+    <div class="pagination">
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+    </div>
 </main>
 
 <footer>
