@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ArticlesController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,3 +31,6 @@ Route::post('logout', function () {
 })->name('logout');
 //Отображение поиска
 Route::get('search','App\Http\Controllers\Search@index')->name('search');
+//Отображение статей
+Route::get('articles', [ArticlesController::class, 'index'])->name('articles');
+
