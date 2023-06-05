@@ -5,19 +5,8 @@
     <link rel="stylesheet" type="text/css" href="../css/app.css">
 </head>
 <body>
-<header>
-    <h1>Добро пожаловать на Автоблог!</h1>
-    <nav>
-        <ul>
-            <li><a href="{{ route('login') }}">Войти</a></li>
-            <li><a href="{{route('home')}}">Главная</a></li>
-            <li><a href="{{route('articles')}}">Статьи</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="{{route('search')}}">Поиск</a></li>
-        </ul>
-    </nav>
-</header>
-
+<h1>Добро пожаловать на Автоблог!</h1>
+@include('section.header')
 <main>
     <section>
         <h2>Последние статьи</h2>
@@ -44,8 +33,6 @@
     </aside>
 </main>
 
-<footer>
-    <p>© 2023 Автоблог. Все права защищены.</p>
-</footer>
+@include('section.footer')
 </body>
 </html>
