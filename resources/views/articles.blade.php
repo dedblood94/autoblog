@@ -1,22 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Автоблог - Список статей</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Статтi - Автоблог</title>
+    <link rel="stylesheet" type="text/css" href="../css/app.css">
 </head>
 <body>
-<header>
-    <h1>Автоблог</h1>
-    <nav>
-        <ul>
-            <li><a href="{{ route('login') }}">Войти</a></li>
-            <li><a href="{{route('home')}}">Главная</a></li>
-            <li><a href="{{route('articles')}}">Статьи</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="{{route('search')}}">Поиск</a></li>
-        </ul>
-    </nav>
-</header>
+<h1>Статi</h1>
+@include('section.header')
 
 <main>
     <h2>Список статей</h2>
@@ -44,8 +34,6 @@
     </div>
 </main>
 
-<footer>
-    <p>© 2023 Автоблог. Все права защищены.</p>
-</footer>
+@include('section.footer')
 </body>
 </html>
