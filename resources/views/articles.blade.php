@@ -1,14 +1,17 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Статтi - Автоблог</title>
-    <link rel="stylesheet" type="text/css" href="../css/app.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Статті</title>
+    <link rel="stylesheet" type="text/css" href="../../resources/css/app.css">
 </head>
 <body>
-<h1>Статi</h1>
 @include('section.header')
-
 <main>
+    <h1>Статi</h1>
     <h2>Список статей</h2>
 
     <div class="articles">
@@ -33,7 +36,6 @@
         <a href="#">5</a>
     </div>
 </main>
-
 @include('section.footer')
 </body>
 </html>
