@@ -1,41 +1,37 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Пошук</title>
+    <title>Поиск - Автоблог</title>
     <link rel="stylesheet" type="text/css" href="../../resources/css/app.css">
 </head>
 <body>
-
+<h1>Автоблог</h1>
 @include('section.header')
 <main>
-    <h1>Автоблог</h1
-    <h2>Поиск статей</h2>
-
-    <form action="{{ route('search') }}" method="GET">
-        <input type="text" name="query" placeholder="Введите ключевое слово">
-        <button type="submit">Найти</button>
+    <div class="searchFormContainer">
+    <h2 class="searchHeading">Пошук статей</h2>
+    <form class="" action="{{ route('search') }}" method="GET">
+        <input type="text" name="query" placeholder="Введіть ключове слово">
+        <button type="submit">Знайти</button>
     </form>
-
-    <div class="search-results">
-        <h3>Результаты поиска</h3>
+    </div>
+    <div class="searchResults">
+        <h3>Результати пошуку</h3>
 
         <div class="article">
-            <h4>Заголовок статьи 1</h4>
-            <p>Описание статьи...</p>
-            <a href="#">Читать далее</a>
+            <h4>Заголовок статті 1</h4>
+            <p>Опис статті...</p>
+            <a href="#">Читати далі</a>
         </div>
 
         <div class="article">
-            <h4>Заголовок статьи 2</h4>
-            <p>Описание статьи...</p>
-            <a href="#">Читать далее</a>
+            <h4>Заголовок статті 2</h4>
+            <p>Опис статті...</p>
+            <a href="#">Читати далі</a>
         </div>
     </div>
 </main>
+
 @include('section.footer')
 </body>
 </html>

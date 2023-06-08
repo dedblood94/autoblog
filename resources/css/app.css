@@ -72,7 +72,8 @@ main{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    margin-right: auto;
+    margin: 0;
+    padding: 0;
 }
 .welcomeHeading {
     font-size: large;
@@ -118,14 +119,56 @@ aside{
     align-items: center;
 }
 
-
-section {
-    flex: 2;
-    margin-right: 20px;
+.asideList{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    align-items: center;
 }
 
-article {
-    margin-bottom: 20px;
+.asideListElement{
+    margin-bottom: 2vh;
+}
+
+.asideListElement a{
+    text-decoration: none;
+    color: black;
+}
+.articlesHeading{
+    margin-left: 20px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articlesBox {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article {
+    margin: 5vh 0;
+    width: calc(50% - 10px); /* Ширина блока статьи - 50% ширины контейнера минус внешние отступы */
+    max-width: 300px; /* Максимальная ширина блока статьи */
+}
+
+/* Дополнительные стили для размещения статей на две строки */
+@media (max-width: 600px) {
+    .articlesBox {
+        flex-wrap: wrap;
+    }
+
+    .article {
+        width: calc(50% - 10px);
+    }
 }
 
 
@@ -138,3 +181,19 @@ footer {
     text-align: center;
     height: 5vh;
 }
+
+.searchFormContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.searchHeading{
+    margin: 0;
+}
+.searchResults{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
