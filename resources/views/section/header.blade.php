@@ -7,7 +7,7 @@
         <ul class="navBarList">
             <li class="navBarListItem"><a href="{{route('home')}}">Головна</a></li>
             <li class="navBarListItem"><a href="{{route('articles')}}">Статті</a></li>
-            <li class="navBarListItem"><a href="{{route('contact')}}">Про нас</a></li>
+            <li class="navBarListItem"><a href="{{route('contact')}}">Допомога</a></li>
             <li class="navBarListItem"><a href="{{route('search')}}">Пошук</a></li>
             <li class="navBarListItem"><a href="{{ route('login') }}">Увійти</a></li>
         </ul>

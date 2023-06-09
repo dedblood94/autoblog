@@ -11,29 +11,31 @@
 <body>
 @include('section.header')
 <main>
-    <h1>Статi</h1>
+    <div class="articlesPageHeading">
+    <h1>Статтi</h1>
     <h2>Список статей</h2>
-
-    <div class="articles">
-        <div class="article">
+    </div>
+    <div class="articlesPageSection">
+        <div class="articlesPageBox">
+        <div class="articlePage">
             <h3>Заголовок статьи 1</h3>
             <p>Описание статьи...</p>
             <a href="#">Читать далее</a>
         </div>
 
-        <div class="article">
+        <div class="articlePage">
             <h3>Заголовок статьи 2</h3>
             <p>Описание статьи...</p>
             <a href="#">Читать далее</a>
         </div>
     </div>
-
     <div class="pagination">
         <a href="#" class="active">1</a>
         <a href="#">2</a>
         <a href="#">3</a>
         <a href="#">4</a>
         <a href="#">5</a>
+    </div>
     </div>
 </main>
 @include('section.footer')

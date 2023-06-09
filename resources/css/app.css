@@ -159,10 +159,20 @@ section {
     width: calc(50% - 10px); /* Ширина блока статьи - 50% ширины контейнера минус внешние отступы */
     max-width: 300px; /* Максимальная ширина блока статьи */
 }
-
+.articlesPageSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.articlePage{
+    padding: 5vh
+}
+.articlesBox{
+    display: flex;
+}
 /* Дополнительные стили для размещения статей на две строки */
 @media (max-width: 600px) {
-    .articlesBox {
+    .HomeArticlesBox {
         flex-wrap: wrap;
     }
 
